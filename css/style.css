@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   border-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) fill 1;
 }
 
+.hidden-text {
+  display: none !important;
+}
+
 .negative-margin-top {
   margin-top: -5rem;
 }
@@ -508,34 +512,21 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 900px) {
  .services {
-          grid-template-columns: repeat(2, minmax(180px, 1fr));
-          gap: 2;
-          background-color: ;
-        /* padding: 0 0 -10px;
-        padding: 10px 5px 3px; */
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 2;
     }
 }
-.services .service {
+/* .services .service {
     /* flex: 0 0 20%;
     max-width: 20%;
-    padding: 0 15px 28px; */
-}
-@media (max-width: 900px) {
-    .services .service {
-        /* padding: 0 10px 20px; */
-    }
-}
+    padding: 0 15px 28px; 
+} 
 /* @media (max-width: 900px) {
     .services .service {
-        padding: 0 5px 10px;
+        padding: 0 10px 20px;
     }
 } */
-/* @media (max-width: 479px) {
-    .services .service {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-} */
+
 .service {
     font-weight: 800;
     line-height: 1.18;
@@ -641,7 +632,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 }
 
-/* LOCATIION SECTION */
+/* LOCATION SECTION */
 .location-section {
   background: var(--clr-bg-3);
   color: var(--clr-text-2);
@@ -709,7 +700,7 @@ h1, h2, h3, h4, h5, h6 {
   h4 {
     text-transform: uppercase;
     color: var(--clr-text-2);
-    font-weight: var(--fw-light);0
+    font-weight: var(--fw-light);
   }
   .flex-content {
     justify-content: space-between;
@@ -717,25 +708,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .content-primary,
     .content-secondary {
-      h4 {
-        text-transform: uppercase;
-        color: var(--clr-text-2);
-        font-weight: var(--fw-light);
-      }
-      ul {
-        list-style: none;
-        padding-left: 0;
-        font-weight: var(--fw-light);
-      }
       .ada-views {
         opacity: .65;
       }
-      .content-primary {
-        .location {
-          max-width: 39%;
-        }
-      }
     }
+
+.content-primary .location {
+  max-width: 39%;
+}
 
     @media (max-width: 900px) {
       flex-direction: column;
