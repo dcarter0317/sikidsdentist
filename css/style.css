@@ -524,33 +524,38 @@ h6 {
 
 /* SERVICE SECTION */
 .our-services-section {
-  background: var(--clr-bg-7);
   padding-block: 4em;
+  background: var(--clr-bg-7);
   .content-primary {
-    flex: 0 0 29%;
-    max-width: 29%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
   .card {
-   
+   padding-inline: 2rem;
+   padding-bottom: 4rem;
     .card__title {
       color: var(--clr-text-2);
     }
   }
   .content-secondary {
-    flex: 0 0 66.4%;
-    max-width: 66.4%;
+    flex: 0 0 70.0%;
+    max-width: 70.0%;
+    background: #ffffff;
+    padding-inline: 2rem;
+    border-radius: 8px;
   }
 }
 .services {
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (max-width: 900px) {
  .services {
-      grid-template-columns: repeat(2,);
+      grid-template-columns: repeat(2, 1fr);
       gap: 2;
+      background: var(--clr-bg-3);
     }
 }
 /* .services .service {
@@ -571,9 +576,9 @@ h6 {
 
    a {
       display: inline-block;
-      width: 100%;
-      height: 100%;
-      background-color: #f5fcfb;
+      width: 80%;
+      height: 80%;
+      background-color: #e4eae9;
       color: #00334f;
       text-align: center;
       text-decoration: none;
