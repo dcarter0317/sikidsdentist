@@ -526,6 +526,7 @@ h6 {
 .our-services-section {
   padding-block: 4em;
   background: var(--clr-bg-7);
+
   .content-primary {
     flex: 0 0 25%;
     max-width: 25%;
@@ -533,6 +534,7 @@ h6 {
   .card {
    padding-inline: 2rem;
    padding-bottom: 4rem;
+   border-radius: 8px 0 0 8px;
     .card__title {
       color: var(--clr-text-2);
     }
@@ -542,19 +544,19 @@ h6 {
     max-width: 70.0%;
     background: #ffffff;
     padding-inline: 2rem;
-    border-radius: 8px;
+    border-radius: 8px 8px 8px 0;
   }
 }
 .services {
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 1fr));
-  gap: 1rem;
+  gap: 10px;
 }
 
 @media (max-width: 900px) {
  .services {
       grid-template-columns: repeat(2, 1fr);
-      gap: 2;
+      gap: 2em;
       background: var(--clr-bg-3);
     }
 }
@@ -570,22 +572,28 @@ h6 {
 } */
 
 .service {
+    font-size: .9em;
     font-weight: 800;
     line-height: 1.18;
     letter-spacing: -0.025em;
 
    a {
       display: inline-block;
-      width: 80%;
-      height: 80%;
+      width: 60%;
+      height: 70%;
       background-color: #e4eae9;
+      border-radius: 8px;
       color: #00334f;
       text-align: center;
       text-decoration: none;
-      padding: 30px 20px 18px;
+      padding: 20px 15px;
       transition:
           background-color 0.3s,
           color 0.3s;
+
+    figure {
+      margin: 0;
+    }
   }
 }
 
@@ -742,6 +750,7 @@ h6 {
   h4 {
     text-transform: uppercase;
     color: var(--clr-text-2);
+    font-size: 1.25rem;
     font-weight: var(--fw-light);
   }
   .flex-content {
