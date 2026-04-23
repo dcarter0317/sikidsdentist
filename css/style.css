@@ -1,25 +1,3 @@
-  @media (max-width: 900px) {
-    background: url('../assets/article-1.jpg') no-repeat center center;
-    background-size: cover;
-    min-height: 220px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  @media (max-width: 900px) {
-    background: #fff;
-    width: 100%;
-    padding: 2rem 1rem 1.5rem 1rem;
-    margin: 0;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    text-align: center;
-  }
 @media (max-width: 900px) {
   html, body, .page-wrap {
     width: 100vw;
