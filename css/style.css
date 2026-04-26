@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (width < 900px) {
   html, body, .page-wrap {
     width: 100vw;
     max-width: 100vw;
@@ -109,7 +109,7 @@ h6 {
 .flex-content {
   display: flex;
   justify-content: space-between;
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     flex-direction: column;
     gap: 1rem;
   }
@@ -119,7 +119,7 @@ h6 {
   display: grid;
   grid-template-columns: auto auto;
   gap: 4rem;
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     grid-template-columns: 1fr;
   }
 }
@@ -186,7 +186,7 @@ h6 {
       top: 18px;
     }
   }
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     display: flex;
     position: fixed;
     top: 1rem;
@@ -197,7 +197,7 @@ h6 {
 .megamenu-nav {
   flex: 1;
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -212,7 +212,7 @@ h6 {
     align-items: flex-start;
     padding-top: 4rem;
     z-index: 1000;
-      @media (max-width: 900px) {
+      @media (width < 900px) {
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
@@ -247,7 +247,7 @@ h6 {
   margin: 0;
   padding: 0;
   align-items: center;
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     gap: 0.5rem;
     width: 100%;
     > li { width: 100%; }
@@ -411,7 +411,7 @@ h6 {
   .content-container {
     padding-top: 24px;
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       padding-top: 8px;
     }
   }
@@ -422,7 +422,7 @@ h6 {
       display: none;
     }
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     .content-secondary {
       display: none;
     }
@@ -432,7 +432,7 @@ h6 {
        gap: 2rem;
     }
   }
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     .flex-content {
       flex-direction: column;
       align-items: center;
@@ -447,7 +447,7 @@ h6 {
 .hero-text {
   margin-top: 120px;
   width: 600px;
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     margin-top: 20px;
     padding-bottom: 80px;
     width: 90%;
@@ -455,13 +455,13 @@ h6 {
   h2 {
     font-size: 1.6rem;
 
-      @media (max-width: 900px) {
+      @media (width < 900px) {
         font-size: 1.2rem;
         line-height: 1.2;
       }
   }
   a {
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       padding: 0.5rem 1.25rem;
       font-size: 1rem;
     }
@@ -479,7 +479,7 @@ h6 {
   justify-content: space-between;
   gap: 2rem;
   margin-top: -120px;
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     flex-direction: column;
     align-items: center;
     margin-top: 0px;  
@@ -487,14 +487,14 @@ h6 {
 }
 
 .team-member {
-   @media (max-width: 900px) {
+   @media (width < 900px) {
     margin-inline: auto;
    }
    img {
     border-radius: 50%;
     border: 16px solid var(--clr-bg-4);
 
-      @media (max-width: 900px) {
+      @media (width < 900px) {
         width: 200px;
         height: 200px;
       }
@@ -510,7 +510,7 @@ h6 {
   flex-direction: row;
   padding-block: 8rem;
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     background: url('../assets/imgs/article-1.jpg') no-repeat top center;
     background-size: 100% auto;
     background-position-y: -9em;
@@ -535,7 +535,7 @@ h6 {
       right: 2em;
       z-index: 2;
   }
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       position: static;
       width: 100%;
       height: auto;
@@ -557,7 +557,7 @@ h6 {
       font-size: 2rem;
       line-height: 1;
     }
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       /* width: 100%; */
       flex: 0 0 100%;
       max-width: 100%;
@@ -594,7 +594,7 @@ h6 {
   .content-container {
     margin-top: -7rem;
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       margin-top: initial;
     }
   }
@@ -602,7 +602,7 @@ h6 {
     flex: 0 0 10%;
     max-width: 10%;
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 2rem;
@@ -626,7 +626,7 @@ h6 {
     /* padding: 2rem; */
     border-radius: 8px;
 
-     @media (max-width: 900px) {
+     @media (width < 900px) {
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 2rem;
@@ -638,7 +638,7 @@ h6 {
   grid-template-columns: repeat(4, minmax(150px, 1fr));
   justify-content: center;
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
@@ -652,7 +652,7 @@ h6 {
     line-height: 1.18;
     letter-spacing: -0.025em;
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       height: 275px;
     }
    a {
@@ -735,7 +735,7 @@ h6 {
 .testimonials-section {
   padding-block: 4rem;
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     width: 90vw !important;
     max-width: 90vw !important;
     margin-left: auto !important;
@@ -748,7 +748,7 @@ h6 {
     text-align: center;
     padding-inline: 6rem;
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       width: 100% !important;
       max-width: 100% !important;
       padding-inline: 0.5rem !important;
@@ -765,7 +765,7 @@ h6 {
   font-weight: var(--fw-light);
   padding-block: 8rem;
 
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     gap: 2rem;
     padding-block: 4rem;
   }
@@ -801,7 +801,7 @@ h6 {
       aspect-ratio: 200/72;
       object-fit: contain;
 
-      @media (max-width: 900px) {
+      @media (width < 900px) {
         width: 150px;
         height: 54px;
       }
@@ -836,7 +836,7 @@ h6 {
   }
 
   .grid-content {
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       grid-template-columns: 1fr;
 
     .location, .hours {
@@ -859,7 +859,7 @@ h6 {
   .location {
     max-width: 39%;
    
-     @media (max-width: 900px) {
+     @media (width < 900px) {
       max-width: 100%;
       margin-bottom: 2rem;
      }
@@ -867,13 +867,13 @@ h6 {
 }
 
 
-    @media (max-width: 900px) {
+    @media (width < 900px) {
       flex-direction: column;
       align-items: center;
     }
   }
   .content-secondary {
-    @media (max-width: 900px) {
+    @media (width < 900px) {
      width: 100%;
      max-width: 900px;
      margin-inline: auto;
@@ -904,7 +904,7 @@ h6 {
         width: 120px;
         height: auto;
       }
-      @media (max-width: 900px) {
+      @media (width < 900px) {
         flex-direction: column;
       }
     ul{
@@ -912,7 +912,7 @@ h6 {
       padding-left: 0;
     }
  }
-  @media (max-width: 900px) {
+  @media (width < 900px) {
     display: none;
   }
 }
