@@ -405,7 +405,7 @@ h6 {
 
 /* HERO SECTION */
 .hero-section {
-  background:url('../assets/hero-background.jpg') no-repeat center center/cover;
+  background:url('../assets/imgs/hero-background.jpg') no-repeat center center/cover;
   aspect-ratio: 21/9;
 
   .content-container {
@@ -504,14 +504,14 @@ h6 {
 /* FEATURES SECTION */
 .featured-section {
   position: relative;
-  background: url('../assets/article-1.jpg') no-repeat left center;
+  background: url('../assets/imgs/article-1.jpg') no-repeat left center;
   background-size: 40.6%;
   display: flex;
   flex-direction: row;
   padding-block: 8rem;
 
   @media (max-width: 900px) {
-    background: url('../assets/article-1.jpg') no-repeat top center;
+    background: url('../assets/imgs/article-1.jpg') no-repeat top center;
     background-size: 100% auto;
     background-position-y: -9em;
     display: flex;
