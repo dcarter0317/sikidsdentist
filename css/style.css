@@ -391,12 +391,12 @@ p{
   .card__cta {
     text-transform: uppercase;
     border-bottom: 4px solid var(--clr-bg-4);
-    a, a:link, a:visited {
+  }
+   a, a:link, a:visited {
     color: var(--clr-text-7);
     text-decoration: none;
     font-weight: var(--fw-bold);
     }
-  }
 }
 
 /* SPLIDE SLIDER */
@@ -605,15 +605,24 @@ p{
   background: var(--clr-bg-7);
   position: relative;
   z-index: 10;
-
-
   .content-container {
     margin-top: -7rem;
 
     @media (width < 900px) {
       margin-top: initial;
     }
+    &.flex-content {
+      gap: 7rem;
+      justify-content: space-around;
+
+      @media (width < 900px) {
+        gap: initial;
+        justify-content: center;
+      }
+    } 
   }
+
+
   .content-primary {
     flex: 0 0 10%;
     max-width: 10%;
@@ -650,47 +659,43 @@ p{
   }
 }
 .services {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
-  justify-content: center;
-
-  @media (width < 900px) {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 15px 4px;
+    margin: 0 0 -28px;
 }
 
 .service {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: .9em;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px 28px;
     font-weight: 800;
     line-height: 1.18;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025em;  
 
     @media (width < 900px) {
-      height: 275px;
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 15px 28px;
     }
-   a {
+   
+    a {
       display: inline-block;
-      width: 60%;
-      height: 70%;
-      background-color: #e4eae9;
+      width: 100%;
+      height: 100%;
+      background-color: #F5FCFB;
       border-radius: 8px;
-      color: #00334f;
+      color: #00334F;
       text-align: center;
       text-decoration: none;
-      padding: 20px 15px;
+      padding: 30px 20px 18px;
       transition:
           background-color 0.3s,
           color 0.3s;
-
-    figure {
-      margin: 0;
-    }
-  }
-}
-
+   }
+ } 
 .service:hover a {
     background-color: #00334f;
     color: #fff;
